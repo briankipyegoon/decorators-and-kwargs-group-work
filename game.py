@@ -23,6 +23,9 @@ def guess_number(player_guess):
         print("Wrong guess. Try again!")
         return False  # Indicate an incorrect guess
 
+
+
+
   #Test the program
 print("Welcome to the Guessing Game! ")
 for attempt in range(1,101):  # Allow the player to guess 100 times
@@ -33,4 +36,6 @@ for attempt in range(1,101):  # Allow the player to guess 100 times
                 continue
             guess_number(guess)  # Call the decorated function
         except ValueError:
-            print("Invalid input! Please enter a number.")
+            print("Invalid input! Please enter a number between 1 and 10")
+
+
